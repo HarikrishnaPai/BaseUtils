@@ -11,6 +11,8 @@
 		8CDC398F20497B3200942D92 /* BaseUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC398E20497B3200942D92 /* BaseUtilsTests.swift */; };
 		8CDC399120497B3200942D92 /* BaseUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CDC398320497B3200942D92 /* BaseUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CDC399B20497E9100942D92 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC399A20497E9100942D92 /* UIColor+Utils.swift */; };
+		8CDD84FC204D83FD0087D3F5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDD84FD204D83FD0087D3F5 /* Nimble.framework */; };
+		8CDD84FF204D865B0087D3F5 /* UIColor+UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD84FE204D865B0087D3F5 /* UIColor+UtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,10 @@
 		8CDC398E20497B3200942D92 /* BaseUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUtilsTests.swift; sourceTree = "<group>"; };
 		8CDC399020497B3200942D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDC399A20497E9100942D92 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		8CDD84FA204D83760087D3F5 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD84FB204D83760087D3F5 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD84FD204D83FD0087D3F5 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD84FE204D865B0087D3F5 /* UIColor+UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UtilsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDD84FC204D83FD0087D3F5 /* Nimble.framework in Frameworks */,
 				8CDC398A20497B3200942D92 /* BaseUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +65,7 @@
 				8CDC398220497B3200942D92 /* BaseUtils */,
 				8CDC398D20497B3200942D92 /* BaseUtilsTests */,
 				8CDC398120497B3200942D92 /* Products */,
+				8CDD84F7204D83760087D3F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +93,19 @@
 			children = (
 				8CDC398E20497B3200942D92 /* BaseUtilsTests.swift */,
 				8CDC399020497B3200942D92 /* Info.plist */,
+				8CDD84FE204D865B0087D3F5 /* UIColor+UtilsTests.swift */,
 			);
 			path = BaseUtilsTests;
+			sourceTree = "<group>";
+		};
+		8CDD84F7204D83760087D3F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD84FD204D83FD0087D3F5 /* Nimble.framework */,
+				8CDD84FA204D83760087D3F5 /* Nimble.framework */,
+				8CDD84FB204D83760087D3F5 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDC398F20497B3200942D92 /* BaseUtilsTests.swift in Sources */,
+				8CDD84FF204D865B0087D3F5 /* UIColor+UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

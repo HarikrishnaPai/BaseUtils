@@ -11,7 +11,7 @@ import UIKit
 extension UIColor {
     
     convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
-        self.init(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1)
+        self.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1.0)
     }
     
     func hex() -> UInt {
@@ -25,13 +25,10 @@ extension UIColor {
         return colorAsUInt
     }
     
-    class func from(rgb hexValue: UInt) -> UIColor {
+    class func from(hex hexValue: UInt) -> UIColor {
         return UIColor(red: CGFloat((hexValue & 0xFF0000) >> 16) / 255.0,
                        green: CGFloat((hexValue & 0x00FF00) >> 8) / 255.0,
-                       blue: CGFloat((hexValue & 0x0000FF) >> 0) / 255.0, alpha: 1.0)
-    }
-    
-    class func navigationBarColor() -> UIColor {
-        return UIColor(red: 0.14, green: 0.16, blue: 0.22, alpha: 1)
+                       blue: CGFloat((hexValue & 0x0000FF) >> 0) / 255.0,
+                       alpha: 1.0)
     }
 }
